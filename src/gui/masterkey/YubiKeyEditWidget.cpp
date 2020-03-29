@@ -30,12 +30,11 @@ YubiKeyEditWidget::YubiKeyEditWidget(QWidget* parent)
     : KeyComponentWidget(parent)
     , m_compUi(new Ui::YubiKeyEditWidget())
 {
-    setComponentName(tr("YubiKey Challenge-Response"));
+    setComponentName(tr("HMAC-SHA1 Challenge-Response Key"));
     setComponentDescription(
-        tr("<p>If you own a <a href=\"https://www.yubico.com/\">YubiKey</a>, you can use it "
-           "for additional security.</p><p>The YubiKey requires one of its slots to be programmed as "
-           "<a href=\"https://www.yubico.com/products/services-software/personalization-tools/challenge-response/\">"
-           "HMAC-SHA1 Challenge-Response</a>.</p>"));
+        tr("<p>You can use a hardware security key such as a <strong>YubiKey</strong>"
+           " or <strong>OnlyKey</strong> with slots configured for HMAC-SHA1.</p>"
+           "\n<p>Click for more information...</p>"));
 }
 
 YubiKeyEditWidget::~YubiKeyEditWidget()
